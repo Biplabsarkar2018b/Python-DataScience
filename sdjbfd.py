@@ -1,7 +1,6 @@
-import requests
-session = requests.Session()
+import pandas as pd
 
-response = requests.get('http://leetcode.com')
-
-# print(session.cookies.get_dict())
-print(response.cookies)
+d = {'col1':[1,2,3,4,67],'col2':[4,5,6,9,5],'col3':[7,8,12,1,11]}
+df = pd.DataFrame(data=d)
+# print(df)
+print(df.shape[1])
